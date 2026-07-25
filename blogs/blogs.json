@@ -1,0 +1,14 @@
+{
+  "repo": "cyence",
+  "feeds": [
+    {
+      "source": "https://www.guidewire.com/developers/apis",
+      "feed_url": "https://www.guidewire.com/developers/apis",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-20T13:31:34Z"
+}

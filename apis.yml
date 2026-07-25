@@ -1,8 +1,29 @@
 aid: cyence
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cyence.png
 name: Cyence
-description: 'Cyence is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Cyence is a cyber risk analytics and modeling solution — originally an
+  independent InsurTech startup (backed by IVP and others) and acquired by
+  Guidewire in 2017 — that helps insurers, reinsurers, brokers, and managing
+  general agents quantify, underwrite, and manage cyber insurance risk in
+  financial terms. It combines internet-scale data collection, data science,
+  and economic loss modeling to produce exposure signals, breach-probability
+  estimates, and portfolio accumulation and catastrophe scenarios. Cyence data
+  and scores are delivered to carriers through Guidewire Cloud and are
+  available via a REST API for pricing, risk selection, and underwriting
+  workflow automation. API access is partner-gated through a Guidewire account
+  rather than a public self-serve developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/cyence/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +31,60 @@ x-backed-by:
 - ivp
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-acquired-by: guidewire
+x-acquired-year: '2017'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Cybersecurity
-apis: []
+- Cyber Risk
+- Insurance
+- InsurTech
+- Risk Analytics
+- Underwriting
+- Guidewire
+apis:
+- name: Cyence Cyber Risk API
+  description: >-
+    Partner-gated REST API that exposes Cyence cyber risk analytics — exposure
+    signals, breach-probability and loss estimates, and portfolio accumulation
+    data — for pricing, risk selection, and underwriting workflow automation.
+    Access is provisioned through a Guidewire account; there is no public
+    OpenAPI specification or self-serve sign-up.
+  humanURL: https://www.guidewire.com/products/analytics/cyence
+  tags:
+  - Cyber Risk
+  - Analytics
+  - Insurance
+  properties:
+  - type: Documentation
+    url: https://docs.guidewire.com/
+common:
+- type: DomainSecurity
+  url: security/cyence-domain-security.yml
+- type: Website
+  url: https://www.guidewire.com/products/analytics/cyence
+- type: DeveloperPortal
+  url: https://www.guidewire.com/developers
+- type: Documentation
+  url: https://docs.guidewire.com/
+- type: APIReference
+  url: https://www.guidewire.com/developers/apis
+- type: Blog
+  url: https://www.guidewire.com/resources/blog
+- type: TrustCenter
+  url: security/cyence-trust-center.yml
+- type: Compliance
+  url: https://www.guidewire.com/resources/help-and-support/trust-and-security
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
