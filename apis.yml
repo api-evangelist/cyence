@@ -52,7 +52,7 @@ tags:
 - Cybersecurity
 - Cyber Risk
 - Insurance
-- Insurtech
+- InsurTech
 - Risk Analytics
 - Underwriting
 - Guidewire
@@ -82,6 +82,11 @@ apis:
   - type: Documentation
     url: https://docs.guidewire.com/
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/guidewire/
+  name: Guidewire
+  x-relationship: acquired
+  x-evidence: "Cyence is a cyber risk analytics and modeling solution — originally an independent InsurTech startup (backed by IVP and others) and acquired by Guidewire in 2017 — that helps insurers, reinsurers, brokers, and managing general agents quanti"
 - type: DomainSecurity
   url: security/cyence-domain-security.yml
 - type: Website
